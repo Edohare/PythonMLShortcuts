@@ -16,7 +16,7 @@ y = heart_disease_shuffled['target']
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2)
 
-# instatiate RandomForestClassifier
+# instantiate RandomForestClassifier
 clf = RandomForestClassifier(n_jobs=1)
 
 # Set up RandomizedSearchCV
