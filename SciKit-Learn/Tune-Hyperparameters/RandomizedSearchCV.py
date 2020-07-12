@@ -1,5 +1,7 @@
 from sklearn.model_selection import RandomizedSearchCV
 
+# Randomized search uses the grid you create, the grid below is very standard, and creates models based on the n_iter and cv to find the best model.
+
 # Create a dictionary of the hyperparameters we would like to adjust
 grid = {"n_estimators": [10, 100, 200, 500, 1000, 1200],
         "max_depth": [None, 5, 10, 20, 30],
