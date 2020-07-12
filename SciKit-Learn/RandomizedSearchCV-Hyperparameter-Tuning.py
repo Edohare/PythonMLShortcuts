@@ -29,6 +29,9 @@ rs_clf = RandomizedSearchCV(estimator = clf,
 # Fit the RandomizedSearchCV version of clf
 rs_clf.fit(x_train, y_train);
 
+#find best params
+rs_clf.best_params_
+
 # Make predicitons with the best hyper_parameters
 rs_y_preds = rs_clf.predict(x_test)
 
